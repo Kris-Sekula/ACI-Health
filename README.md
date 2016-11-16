@@ -35,3 +35,5 @@ Here is where you can source the HW from:
 
 #### Software.
  The code that controls the gadget is written in python and the main monitoring script (monitor.py) is called on boot of the raspberry pi. I'm not a python guru so don't expect amazing code :) It's a good starting point for experiments with the API built into ACI.
+ 
+Full instructions on how to setup from blank image are included in setup_pi_monitor file
