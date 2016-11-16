@@ -18,6 +18,18 @@ A hardware based "monitor" for Cisco ACI infrastructure.
 
 #### Hardware.
  The device is based on "Raspberry Pi Zero" embedded linux computer. The computer uses a wi-fi dongle plugged via a USB hub to connect to wireless network. The "screen" is an of-the-shelf available module. Power is provided via a micro USB cable (either from a "phone" style charger or using a USB-A-to-micro-USB cable plugged to a computer).
+Here is wher you can source the HW from:
+
+1. Raspberry Pi Zero and WiFi dongle.
+https://shop.pimoroni.com/products/raspberry-pi-zero
+https://www.adafruit.com/products/2817
+
+2. USB HUB 
+https://thepihut.com/products/zero4u-4-port-usb-hub-for-raspberry-pi-zero?variant=18768521796
+https://www.adafruit.com/product/3298
+
+3. Dispaly
+https://shop.pimoroni.com/products/unicorn-phat
 
 ![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/hw.png "Hardware details")
 
