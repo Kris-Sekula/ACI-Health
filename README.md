@@ -1,3 +1,5 @@
+![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/hw_small.jpg "Health Score Display")
+
 # ACI-Health
 A hardware based "monitor" for Cisco ACI infrastructure.
 
