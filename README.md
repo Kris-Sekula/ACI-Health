@@ -21,14 +21,17 @@ A hardware based "monitor" for Cisco ACI infrastructure.
 Here is wher you can source the HW from:
 
 1. Raspberry Pi Zero and WiFi dongle.
+
 https://shop.pimoroni.com/products/raspberry-pi-zero
 https://www.adafruit.com/products/2817
 
 2. USB HUB 
+
 https://thepihut.com/products/zero4u-4-port-usb-hub-for-raspberry-pi-zero?variant=18768521796
 https://www.adafruit.com/product/3298
 
 3. Display
+
 https://shop.pimoroni.com/products/unicorn-phat
 
 ![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/hw.png "Hardware details")
