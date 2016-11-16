@@ -18,7 +18,7 @@ A hardware based "monitor" for Cisco ACI infrastructure.
 
 #### Hardware.
  The device is based on "Raspberry Pi Zero" embedded linux computer. The computer uses a wi-fi dongle plugged via a USB hub to connect to wireless network. The "screen" is an of-the-shelf available module. Power is provided via a micro USB cable (either from a "phone" style charger or using a USB-A-to-micro-USB cable plugged to a computer).
-Here is wher you can source the HW from:
+Here is where you can source the HW from:
 
 1. Raspberry Pi Zero and WiFi dongle.
 [US](https://shop.pimoroni.com/products/raspberry-pi-zero)
