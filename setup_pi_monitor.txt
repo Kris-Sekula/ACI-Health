@@ -1,0 +1,107 @@
+x. Download and install the Raspbian image, follow the install instructions:
+
+https://www.raspberrypi.org/
+
+x. install the micro SD card, connect keyboard, mouse, screen and finally power
+
+Boot and wait for the GUI to load.
+
+x. menu -> Preferences -> Raspberry pi configuration
+
+change hostname
+
+change default pi password
+
+change timezone
+
+when done navigate to finish
+
+(optionally) you can change the boot behaviour to boot to CLI not GUI (saves CPU cycles and power if you’re using the unit “headless”).
+
+reboot
+
+x. sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=GB
+
+
+network={
+
+	ssid=“yourSSID”	
+	psk=“password”
+	key_mgmt=WPA-PSK
+
+}
+
+network={
+  ssid=“WPA_EnterpirseSSID”
+  scan_ssid=1
+  key_mgmt=WPA-EAP
+  pairwise=CCMP TKIP
+  group=CCMP TKIP
+  eap=PEAP
+  identity=“domain_username@doman.com"
+  password=“domain_password”
+  phase1="peapver=0"
+  phase2="MSCHAPV2"
+}
+
+
+x. disable wireless power management (some wifi dongles go to power save and cause issues)
+sudo nano /etc/network/interfaces
+
+add
+iface wlan 0 inet manual 
+	wireless-power off
+
+iface wlan 1 inet manual
+ 	wireless-power off
+
+
+x. now that you’re online update the software on your pi
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo rpi-update
+reboot
+
+x. install the display library
+
+sudo curl -sS get.pimoroni.com/unicornhat | bash
+
+x. install some useful packages like vim and mail utilities.
+
+sudo apt-get install -y vim 
+sudo apt-get install -y ssmtp 
+sudo apt-get install -y mailutils
+
+x. 
+
+sudo mkdir gitfile
+sudo git clone https://github.com/Kris-Sekula/ACI-Health
+
+sudo mv monitor.py /boot/
+sudo mv mailmyip.sh /boot/
+sudo mv vim-rc .vimdc
+sudo mv ssmtp.conf /etc/ssmtp/ssmtp.conf
+
+
+x. edit email settings, change hostname and outgoing smtp server
+sudo vi /etc/ssmtp/ssmtp.conf
+
+x. test email
+echo "Hello world email body" | mail -s "Test Subject" me@domain.com
+
+x. Install cron job to start the monitor function and send email 
+
+sudo crontab -e
+
+@reboot sleep 120 && bash /boot/mailmyip.sh
+@reboot sudo /usr/bin/python /boot/monitor.py
+
+x. disable ipv6 if you don’t need it
+sudo vi /etc/sysctl.conf
+
+net.ipv6.conf.all.disable_ipv6 = 1
