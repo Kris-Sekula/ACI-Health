@@ -21,8 +21,8 @@ A hardware based "monitor" for Cisco ACI infrastructure.
 Here is where you can source the HW from:
 
 1. Raspberry Pi Zero and WiFi dongle.
-[US](https://shop.pimoroni.com/products/raspberry-pi-zero)
-[UK](https://www.adafruit.com/products/2817)
+[UK](https://shop.pimoroni.com/products/raspberry-pi-zero)
+[US](https://www.adafruit.com/products/2817)
 
 2. USB HUB 
 [UK](https://thepihut.com/products/zero4u-4-port-usb-hub-for-raspberry-pi-zero?variant=18768521796)
