@@ -41,6 +41,8 @@ Full instructions on how to setup from blank image are included in setup_pi_moni
 ### New Features.
 
 #### IP address display.
-The code now includes ability to display the ip address(es) of the raspberry pi during boot. For now this is done in binary, so you will need to decode, see the picture below:
+ I've updated the monitor.py script, on boot the script now waits for ip address to be assigned to the device and after that it will display the ip address encoded in binary !  Fist column is the first octet, 2nd column is 2nd octet and so on. Best is to take a picture and decode later using google or calculator.
+ 
+See example below on how to decode the ip address from what is displayed:
 
 ![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/Scores_IP.png "What is my IP?")
