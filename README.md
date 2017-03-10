@@ -45,4 +45,4 @@ Full instructions on how to setup from blank image are included in setup_pi_moni
  
 See example below on how to decode the ip address from what is displayed:
 
-![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/Scores_IP.png "What is my IP?")
+![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/Scores_IP_small.png "What is my IP?")
