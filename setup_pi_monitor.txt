@@ -77,10 +77,16 @@ sudo apt-get install -y vim
 sudo apt-get install -y ssmtp 
 sudo apt-get install -y mailutils
 
+this one fixes the random number generator:
+sudo apt-get install rng-tools
+
+optional if you're using 'lite' version of rasbian:
+sudo apt-get install python-requests
+
 x. 
 
-sudo mkdir gitfile
 sudo git clone https://github.com/Kris-Sekula/ACI-Health
+cd ACI-Health
 
 sudo mv monitor.py /boot/
 sudo mv mailmyip.sh /boot/
