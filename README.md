@@ -54,3 +54,6 @@ See example below on how to decode the ip address from what is displayed:
 
 #### 3D Printed Case
  Added to the repository stl files, in case you would like to print your own case. The final version also has a printed label on sticky paper (covered with transparent film).
+
+![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/ACI_Health_3D.jpg "Inside 3D printed case")
+ 
