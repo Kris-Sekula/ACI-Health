@@ -33,6 +33,8 @@ Here is where you can source the HW from:
 
 ![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/hw.png "Hardware details")
 
+Edit (Oct-2019). Those days you can of course use the raspberry pi zero w, with WiFi built in. And why not use ESP8266? Getting the Enterprise level wireless configuration on ESP type device was challenging last time I tried, embedded linux deals with it much better so for this project I stick to raspberry pi.
+
 #### Software.
  The code that controls the gadget is written in python and the main monitoring script (monitor.py) is called on boot of the raspberry pi. I'm not a python guru so don't expect amazing code :) It's a good starting point for experiments with the API built into ACI.
  
