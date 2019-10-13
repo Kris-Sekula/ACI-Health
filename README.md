@@ -20,20 +20,23 @@ A hardware based "monitor" for Cisco ACI infrastructure.
  The device is based on "Raspberry Pi Zero" embedded linux computer. The computer uses a wi-fi dongle plugged via a USB hub to connect to wireless network. The "screen" is an of-the-shelf available module. Power is provided via a micro USB cable (either from a "phone" style charger or using a USB-A-to-micro-USB cable plugged to a computer).
 Here is where you can source the HW from:
 
-1. Raspberry Pi Zero and WiFi dongle.
-[UK](https://shop.pimoroni.com/products/raspberry-pi-zero)
+1. Raspberry Pi Zero W and ~~WiFi dongle~~.
+[UK](https://shop.pimoroni.com/products/raspberry-pi-zero-w)
+~~[UK](https://shop.pimoroni.com/products/raspberry-pi-zero)~~
 [US](https://www.adafruit.com/products/2817)
 
-2. USB HUB 
+2. USB HUB (not needed anymore if you use raspberry pi zero w)
 [UK](https://thepihut.com/products/zero4u-4-port-usb-hub-for-raspberry-pi-zero?variant=18768521796)
 [US](https://www.adafruit.com/product/3298)
 
 3. Display
 [UK](https://shop.pimoroni.com/products/unicorn-phat)
+[US](https://www.adafruit.com/product/3181)
 
 ![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/hw.png "Hardware details")
 
-Edit (Oct-2019). Those days you can of course use the raspberry pi zero w, with WiFi built in. And why not use ESP8266? Getting the Enterprise level wireless configuration on ESP type device was challenging last time I tried, embedded linux deals with it much better so for this project I stick to raspberry pi.
+**Edit (Oct-2019)**. Those days you can of course use the raspberry pi zero w, with WiFi built in. So no need for USB HUB as well.
+And why not use ESP8266 you ask? Well getting the Enterprise wireless configuration on ESP type device was challenging last time I tried, embedded linux deals with it much better so for this project I stick to raspberry pi.
 
 #### Software.
  The code that controls the gadget is written in python and the main monitoring script (monitor.py) is called on boot of the raspberry pi. I'm not a python guru so don't expect amazing code :) It's a good starting point for experiments with the API built into ACI.
@@ -48,3 +51,6 @@ Full instructions on how to setup from blank image are included in setup_pi_moni
 See example below on how to decode the ip address from what is displayed:
 
 ![alt text](https://github.com/Kris-Sekula/ACI-Health/blob/master/Scores_IP_small.png "What is my IP?")
+
+#### 3D Printed Case
+ Added to the repository stl files, in case you would like to print your own case. The final version also has a printed label on sticky paper (covered with transparent film).
